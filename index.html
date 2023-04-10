@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* General settings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            scroll-behavior: smooth;
+        }
+    
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        header h1 {
+            position: relative;
+            z-index: 1;
+            font-size: 3em;
+        }
+    
+        /* Navigation */
+        nav {
+            background-color: rgba(242, 242, 242, 0.95);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+    
+        nav a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+    
+        nav:hover {
+            background-color: #f2f2f2;
+        }
+    
+        nav a:hover {
+            color: #007BFF;
+        }
+    
+        /* Section */
+        section {
+            padding: 3em;
+        }
+    
+        /* Subsection */
+        .subsection-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+    
+        .subsection {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    
+        .subsection h3 {
+            font-size: 2em;
+            font-weight: 500;
+            margin: 1em 0;
+            text-align: center;
+        }
+    
+        /* Card */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .card {
+            flex-basis: calc(33.333% - 2em);
+            margin: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #f2f2f2;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 200px;
+        }
+    
+        .card h2 {
+            font-size: 1.5em;
+            margin: 1em 0;
+        }
+    
+        .card p {
+            font-size: 1em;
+            margin: 1em;
+            line-height: 1.4;
+        }
+
+        /* Contact Form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    .card {
+        flex-basis: calc(50% - 2em);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex-basis: calc(100% - 2em);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    .subsection h3 {
+        font-size: 1.5em;
+    }
+
+    .card h2 {
+        font-size: 1.2em;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+</style
+    
+</head>
+<body>
+    <header id="home">
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        
+        <div class="subsection">
+            <h3>iOS Projects</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subsection">
+            <h3>Fullstack Projects</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
