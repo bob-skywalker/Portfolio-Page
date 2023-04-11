@@ -13,6 +13,40 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        .card a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-icons a img {
+            width: 48px;
+            height: 48px;
+            border: none;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #007BFF;
+            float: right;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+
     
         body {
             font-family: 'Roboto', Arial, sans-serif;
@@ -231,7 +265,10 @@ button:hover {
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <img src="https://i.ibb.co/RQ4vb7M/1552796731593.jpg" alt="bo-zhong" class="profile-image">
+        <p>Hi there! I'm Bo Zhong, a full-stack software engineer based in the beautiful San Francisco Bay Area. I love turning ideas into reality by leveraging my expertise in a variety of programming languages, including JavaScript, Ruby on Rails, Swift, and React. When I'm not coding away, I enjoy exploring the latest trends in Firebase Auth, Cocoapods, and Swift Package Manager. I'm also a bit of a whiz with RESTful API calls and delegate design pattern implementation.</p>
+        <div style="height: 30px"> </div>
+        <p>Some of the coolest projects I've worked on include Mighty Ninja Run, Quizzler, and Clim8 - a trio of awesome iOS apps that showcase my skills in Swift, MVC design patterns, and principles of object immutability. My other claim to fame is Home-BnB, a full-stack Airbnb clone built using Ruby on Rails and React.js. I'm also super proud of Project Sticky, a MERN-based work management app that's all about helping people track and manage their work with an intuitive UI.</p>
     </section>
     <section id="projects">
         <h2>My Projects</h2>
@@ -240,19 +277,25 @@ button:hover {
             <h3>iOS Projects</h3>
             <div class="card-container">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                    <h2>Project Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="https://apps.apple.com/us/app/mighty-ninja-run/id1666743843" target="_blank">
+                        <img src="https://i.ibb.co/P99zHS5/Untitled-design-7.png" alt="Project Image">
+                        <h2>Mighty Ninja Run - iOS </h2>
+                        <p>Might Ninja Run is a platform video game for iOS. The player controls our mighty ninja as he automatically run across the screen while timing jumps to collect coins and dodge lethal enemies.</p>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                    <h2>Project Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="https://apps.apple.com/us/app/clime8/id1662664856" target="_blank">
+                        <img src="https://i.ibb.co/rttBYjC/Untitled-design-8.png" alt="Project Image">
+                        <h2>Clime8 Weather - iOS</h2>
+                        <p>Made possible with 2 async API fetch simultaneously. Get the live weather forecast with automatic background rendering with this powerful app. See current and forecasted weather with our smart layout that updates as conditions change. View weather conditions, temperatures to see different conditions near you. </p>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                    <h2>Project Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="https://apps.apple.com/us/app/quizzller/id1661875403" target="_blank">
+                        <img src="https://i.ibb.co/hsj3rrN/Untitled-design-10.png" alt="Project Image">
+                        <h2>Quizzller - iOS</h2>
+                        <p>Quizzler is the easiest way to study, practice and learn varies topics ranging from demographics to entertainment. Become an expert in whatever you're learning. Come and study and have fun with our flashcard style quiz app. </p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -261,14 +304,18 @@ button:hover {
             <h3>Fullstack Projects</h3>
             <div class="card-container">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                    <h2>Project Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="https://homebnb-airbnb.herokuapp.com/" target="_blank">
+                        <img src="https://i.ibb.co/xXVysQS/Untitled-design-11.png" alt="Project Image">
+                        <h2>Homebnb - Airbnb Clone</h2>
+                        <p>an online marketplace focused on short-term homestay and experiences. homebnb is a full-stack, multi-functional application clone of Airbnb that uses React and Redux on the front-end and Ruby on Rails, PostgresSQL and AWS S3 on the back-end.</p>
+                    </a>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
-                    <h2>Project Name</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="https://project-sticky.herokuapp.com/" target="_blank">
+                        <img src="https://i.ibb.co/j845H1g/Untitled-design-12.png" alt="Project Image">
+                        <h2>Project Sticky - Task  Managing App</h2>
+                        <p>Project Sticky is an app inspired by the need for project management. By the name project sticky, we hope people can stick to the plan and finish their projects on time. A virtual representation of the progress will make our app more entertaining and practical for people to notice where they are at in the project timeline, as well as if they are on track or behind.</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -276,16 +323,19 @@ button:hover {
     
     
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/bo-zhong-bb4a4b13a/" target="_blank" rel="noopener noreferrer">
+            <img src="./src/LinkedIn.svg" alt="LinkedIn" width="48" height="48">
+        </a>
+        <a href="https://github.com/bob-skywalker" target="_blank" rel="noopener noreferrer">
+            <img src="./src/Github.svg" alt="GitHub" width="48" height="48">
+        </a>
+        <a href="mailto:q463250938@gmail.com">
+            <img src="./src/Email.svg" alt="Email" width="48" height="48">
+        </a>
+    </div>
+</section>
+
 </body>
 </html>
