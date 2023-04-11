@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio Page</title>
+    <title>Bo's Portfolio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,6 +46,22 @@
             margin-left: 1rem;
             margin-bottom: 1rem;
         }
+
+        /* General styles */
+                @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.1) rotate(360deg);
+            animation: spin 1s linear;
+        }
+
 
     
         body {
@@ -97,6 +113,7 @@
             font-size: 1em;
             transition: color 0.3s;
         }
+
     
         nav:hover {
             background-color: #f2f2f2;
@@ -131,6 +148,22 @@
             margin: 1em 0;
             text-align: center;
         }
+
+        /* Heading Effects */
+        .subsection h3.ios-projects-title {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #007BFF;
+            text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.5);
+        }
+
+        .subsection h3.fullstack-projects-title {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #28a745;
+            text-shadow: 2px 2px 4px rgba(40, 167, 69, 0.5);
+        }
+
     
         /* Card */
         .card-container {
@@ -211,6 +244,36 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Arrow-Down */
+
+.arrow-down {
+    margin-left: 20px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    transform: translateY(0px) rotate(45deg);
+    animation: arrow-down 2s infinite;
+}
+
+@keyframes arrow-down {
+    0%, 100% {
+        transform: translateY(0px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
+#scroll-down-btn{
+    margin-bottom: 10px;
+}
+
+
+
+
+
 /* Media queries */
 @media screen and (max-width: 1024px) {
     .card {
@@ -249,13 +312,19 @@ button:hover {
         font-size: 14px;
     }
 }
-</style
+</style>
     
 </head>
 <body>
     <header id="home">
-        <h1>My Portfolio</h1>
+        <h1>Welcome to My Portfolio Page!</h1>
+            <div id="scroll-down-btn" style="cursor:pointer; position:absolute; bottom:20px; left:50%; transform:translateX(-50%); z-index:2;">Click To Learn More
+                <div class="arrow-down"></div>
+            </div>
+        
     </header>
+    
+
     
     <nav>
         <a href="#home">Home</a>
@@ -274,7 +343,7 @@ button:hover {
         <h2>My Projects</h2>
         
         <div class="subsection">
-            <h3>iOS Projects</h3>
+            <h3 class="ios-projects-title">iOS Projects</h3>
             <div class="card-container">
                 <div class="card">
                     <a href="https://apps.apple.com/us/app/mighty-ninja-run/id1666743843" target="_blank">
@@ -301,7 +370,7 @@ button:hover {
         </div>
         
         <div class="subsection">
-            <h3>Fullstack Projects</h3>
+            <h3 class="fullstack-projects-title">Fullstack Projects</h3>
             <div class="card-container">
                 <div class="card">
                     <a href="https://homebnb-airbnb.herokuapp.com/" target="_blank">
@@ -336,6 +405,10 @@ button:hover {
         </a>
     </div>
 </section>
-
+<script>
+    document.getElementById('scroll-down-btn').onclick = function () {
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    };
+</script>
 </body>
 </html>
