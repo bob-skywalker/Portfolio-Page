@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-KfM8zBghdJXe9ew6e2/++FLfQ6NzT6/bz/IMI8KZXUebe6zD5l5EPuj6vuJq3UgMSK5mHzrHr5i5znG6Kxe5mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* General settings */
         * {
@@ -288,7 +289,34 @@ button:hover {
     height: 100%;
 }
 
+/* Buttons */
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    min-width: 100px;
+    margin-right: 10px;
+    border-radius: 13px;
+    transition: background-color 0.5s;
+}
 
+.btn:hover{
+    background-color: #007BFF;
+}
+
+.btn:last-child{
+    margin-right: 0;
+}
+
+.card .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
 
 
 /* Media queries */
@@ -367,25 +395,32 @@ button:hover {
             <h3 class="ios-projects-title">iOS Projects</h3>
             <div class="card-container">
                 <div class="card">
-                    <a href="https://apps.apple.com/us/app/mighty-ninja-run/id1666743843" target="_blank">
                         <img src="https://i.ibb.co/P99zHS5/Untitled-design-7.png" alt="Project Image">
                         <h2>Mighty Ninja Run - iOS </h2>
-                        <p>Might Ninja Run is a platform video game for iOS. The player controls our mighty ninja as he automatically run across the screen while timing jumps to collect coins and dodge lethal enemies.</p>
-                    </a>
+                        <p>Might Ninja Run is a platform video game for iOS. The player controls our mighty ninja as he automatically run across the screen while timing jumps to collect coins and dodge lethal enemies. The player's end goal is to steer our mighty ninja safely across the level and reach the end of the line. Eight Levels currently available to play.</p>
+                        <div class="button-container">
+                            <a href="https://apps.apple.com/us/app/mighty-ninja-run/id1666743843" target="_blank" class="btn"><span style="color: white">App Store</span></a>
+                            <a href="https://github.com/bob-skywalker/ninja-run-ios" target="_blank" class="btn"><span style="color: white">Github</span></a>                  
+                        </div>
                 </div>
                 <div class="card">
-                    <a href="https://apps.apple.com/us/app/clime8/id1662664856" target="_blank">
                         <img src="https://i.ibb.co/rttBYjC/Untitled-design-8.png" alt="Project Image">
                         <h2>Clime8 Weather - iOS</h2>
                         <p>Made possible with 2 async API fetch simultaneously. Get the live weather forecast with automatic background rendering with this powerful app. See current and forecasted weather with our smart layout that updates as conditions change. View weather conditions, temperatures to see different conditions near you. </p>
+                        <div class="button-container">
+                            <a href="https://apps.apple.com/us/app/clime8/id1662664856" target="_blank" class="btn"><span style="color: white">App Store</span></a>
+                            <a href="https://github.com/bob-skywalker/Clim8-ios" target="_blank" class="btn"><span style="color: white">Github</span></a>
+                        </div>
                     </a>
                 </div>
                 <div class="card">
-                    <a href="https://apps.apple.com/us/app/quizzller/id1661875403" target="_blank">
                         <img src="https://i.ibb.co/hsj3rrN/Untitled-design-10.png" alt="Project Image">
                         <h2>Quizzller - iOS</h2>
                         <p>Quizzler is the easiest way to study, practice and learn varies topics ranging from demographics to entertainment. Become an expert in whatever you're learning. Come and study and have fun with our flashcard style quiz app. </p>
-                    </a>
+                        <div class="button-container">
+                            <a href="https://apps.apple.com/us/app/quizzller/id1661875403" target="_blank" class="btn"><span style="color: white">App Store</span></a>
+                            <a href="https://github.com/bob-skywalker/quizller-ios" target="_blank" class="btn"><span style="color: white">Github</span></a>
+                        </div>
                 </div>
             </div>
         </div>
@@ -394,18 +429,23 @@ button:hover {
             <h3 class="fullstack-projects-title">Fullstack Projects</h3>
             <div class="card-container">
                 <div class="card">
-                    <a href="https://homebnb-airbnb.herokuapp.com/" target="_blank">
                         <img src="https://i.ibb.co/xXVysQS/Untitled-design-11.png" alt="Project Image">
                         <h2>Homebnb - Airbnb Clone</h2>
-                        <p>an online marketplace focused on short-term homestay and experiences. homebnb is a full-stack, multi-functional application clone of Airbnb that uses React and Redux on the front-end and Ruby on Rails, PostgresSQL and AWS S3 on the back-end.</p>
-                    </a>
+                        <p>an online marketplace focused on short-term homestay and experiences. homebnb is a full-stack, multi-functional application clone of Airbnb that uses React and Redux on the front-end and Ruby on Rails, PostgresSQL and AWS S3 on the back-end. User is able to log in and view their reservations and edit their booking dates. Full authentication implementation using ruby on rails library Oauth. Google Map Intergration With X-Y Coordinations. </p>
+                        <div class="button-container">
+                            <a href="https://homebnb-airbnb.herokuapp.com/" target="_blank" class="btn"><span style="color: white">Live Site</span></a>
+                            <a href="https://github.com/bob-skywalker/homebnb2" target="_blank" class="btn"><span style="color: white">Github</span></a>
+                        </div>
+                          
                 </div>
                 <div class="card">
-                    <a href="https://project-sticky.herokuapp.com/" target="_blank">
                         <img src="https://i.ibb.co/j845H1g/Untitled-design-12.png" alt="Project Image">
                         <h2>Project Sticky - Task  Managing App</h2>
                         <p>Project Sticky is an app inspired by the need for project management. By the name project sticky, we hope people can stick to the plan and finish their projects on time. A virtual representation of the progress will make our app more entertaining and practical for people to notice where they are at in the project timeline, as well as if they are on track or behind.</p>
-                    </a>
+                        <div class="button-container">
+                            <a href="https://project-sticky.herokuapp.com/" target="_blank" class="btn"><span style="color: white">Live Site</span></a>
+                            <a href="https://github.com/Tians97/Project-Sticky" target="_blank" class="btn"><span style="color: white">Github</span></a>
+                        </div>
                 </div>
             </div>
         </div>
