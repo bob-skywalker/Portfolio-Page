@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Bo's Portfolio Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-KfM8zBghdJXe9ew6e2/++FLfQ6NzT6/bz/IMI8KZXUebe6zD5l5EPuj6vuJq3UgMSK5mHzrHr5i5znG6Kxe5mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-KfM8zBghdJXe9ew6e2/++FLfQ6NzT6/bz/IMI8KZXUebe6zD5l5EPuj6vuJq3UgMSK5mHzrHr5i5znG6Kxe5mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* General settings */
         * {
@@ -15,7 +18,7 @@
             box-sizing: border-box;
         }
 
-        .card a{
+        .card a {
             text-decoration: none;
             color: black;
         }
@@ -49,10 +52,11 @@
         }
 
         /* General styles */
-                @keyframes spin {
+        @keyframes spin {
             0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(360deg);
             }
@@ -64,7 +68,7 @@
         }
 
 
-    
+
         body {
             font-family: 'Roboto', Arial, sans-serif;
             font-size: 16px;
@@ -72,7 +76,7 @@
             color: #444;
             scroll-behavior: smooth;
         }
-    
+
         /* Header */
         header {
             background-color: #333;
@@ -86,13 +90,13 @@
             justify-content: center;
             align-items: center;
         }
-    
+
         header h1 {
             position: relative;
             z-index: 1;
             font-size: 3em;
         }
-    
+
         /* Navigation */
         nav {
             background-color: rgba(242, 242, 242, 0.95);
@@ -103,7 +107,7 @@
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s;
         }
-    
+
         nav a {
             float: left;
             display: block;
@@ -115,20 +119,20 @@
             transition: color 0.3s;
         }
 
-    
+
         nav:hover {
             background-color: #f2f2f2;
         }
-    
+
         nav a:hover {
             color: #007BFF;
         }
-    
+
         /* Section */
         section {
             padding: 3em;
         }
-    
+
         /* Subsection */
         .subsection-container {
             display: flex;
@@ -137,12 +141,12 @@
             max-width: 1500px;
             margin: 0 auto;
         }
-    
+
         .subsection {
             width: 100%;
             margin-bottom: 2em;
         }
-    
+
         .subsection h3 {
             font-size: 2em;
             font-weight: 500;
@@ -165,14 +169,14 @@
             text-shadow: 2px 2px 4px rgba(40, 167, 69, 0.5);
         }
 
-    
+
         /* Card */
         .card-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-    
+
         .card {
             position: relative;
             flex-basis: calc(33.333% - 2em);
@@ -189,26 +193,26 @@
             align-items: stretch;
             transition: box-shadow 0.3 ease-in-out;
         }
-    
+
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2),
-                0 0 20px rgba(7, 101, 232, 0.4); 
+                0 0 20px rgba(7, 101, 232, 0.4);
         }
-    
+
         .card img {
             width: 100%;
             height: auto;
             object-fit: cover;
             max-height: 200px;
         }
-    
+
         .card h2 {
             font-size: 1.5em;
             margin: 1em 0;
         }
-    
+
         .card p {
             font-size: 1em;
             margin: 1em;
@@ -216,169 +220,176 @@
         }
 
         /* Contact Form */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
 
-label {
-    display: block;
-    margin: 10px 0;
-}
+        label {
+            display: block;
+            margin: 10px 0;
+        }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
 
-button {
-    display: inline-block;
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    padding: 12px 24px;
-    margin: 20px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+        button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            padding: 12px 24px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-button:hover {
-    background-color: #0056b3;
-}
+        button:hover {
+            background-color: #0056b3;
+        }
 
-/* Arrow-Down */
+        /* Arrow-Down */
 
-.arrow-down {
-    margin-left: 20px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    transform: translateY(0px) rotate(45deg);
-    animation: arrow-down 2s infinite;
-}
+        .arrow-down {
+            margin-left: 20px;
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            transform: translateY(0px) rotate(45deg);
+            animation: arrow-down 2s infinite;
+        }
 
-@keyframes arrow-down {
-    0%, 100% {
-        transform: translateY(0px) rotate(45deg);
-    }
-    50% {
-        transform: translateY(10px) rotate(45deg);
-    }
-}
+        @keyframes arrow-down {
 
-#scroll-down-btn{
-    margin-bottom: 2.5rem;
-}
+            0%,
+            100% {
+                transform: translateY(0px) rotate(45deg);
+            }
 
+            50% {
+                transform: translateY(10px) rotate(45deg);
+            }
+        }
 
-/* Video Container */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.video-container iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Buttons */
-.btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border: none;
-    min-width: 100px;
-    margin-right: 10px;
-    border-radius: 13px;
-    transition: background-color 0.5s;
-}
-
-.btn:hover{
-    background-color: #007BFF;
-}
-
-.btn:last-child{
-    margin-right: 0;
-}
-
-.card .button-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-}
+        #scroll-down-btn {
+            margin-bottom: 2.5rem;
+        }
 
 
-/* Media queries */
-@media screen and (max-width: 1024px) {
-    .card {
-        flex-basis: calc(50% - 2em);
-    }
-}
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
 
-@media screen and (max-width: 768px) {
-    .card {
-        flex-basis: calc(100% - 2em);
-    }
-}
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-@media screen and (max-width: 600px) {
-    nav a {
-        font-size: 14px;
-    }
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border: none;
+            min-width: 100px;
+            margin-right: 10px;
+            border-radius: 13px;
+            transition: background-color 0.5s;
+        }
 
-    header h1 {
-        font-size: 2em;
-    }
+        .btn:hover {
+            background-color: #007BFF;
+        }
 
-    section {
-        padding: 1.5em;
-    }
+        .btn:last-child {
+            margin-right: 0;
+        }
 
-    .subsection h3 {
-        font-size: 1.5em;
-    }
+        .card .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em;
+        }
 
-    .card h2 {
-        font-size: 1.2em;
-    }
 
-    .card p {
-        font-size: 14px;
-    }
-}
-</style>
-    
+        /* Media queries */
+        @media screen and (max-width: 1024px) {
+            .card {
+                flex-basis: calc(50% - 2em);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                flex-basis: calc(100% - 2em);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            nav a {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 1.5em;
+            }
+
+            .subsection h3 {
+                font-size: 1.5em;
+            }
+
+            .card h2 {
+                font-size: 1.2em;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
     <header id="home">
         <h1>Welcome to My Portfolio Page!</h1>
-            <div id="scroll-down-btn" style="cursor:pointer; position:absolute; bottom:20px; left:50%; transform:translateX(-50%); z-index:2;">Click To Learn More
-                <div class="arrow-down"></div>
-            </div>
-        
-    </header>
-    
+        <div id="scroll-down-btn"
+            style="cursor:pointer; position:absolute; bottom:20px; left:50%; transform:translateX(-50%); z-index:2;">
+            Click To Learn More
+            <div class="arrow-down"></div>
+        </div>
 
-    
+    </header>
+
+
+
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -388,105 +399,123 @@ button:hover {
     <section id="about">
         <h2>About Me</h2>
         <img src="https://i.ibb.co/RQ4vb7M/1552796731593.jpg" alt="bo-zhong" class="profile-image">
-        <p>Hi there! I'm Bo Zhong, a full-stack software engineer based in the beautiful San Francisco Bay Area. I love turning ideas into reality by leveraging my expertise in a variety of programming languages, including JavaScript, Ruby on Rails, Swift, and React. When I'm not coding away, I enjoy exploring the latest trends in Firebase Auth, Cocoapods, and Swift Package Manager. I'm also a bit of a whiz with RESTful API calls and delegate design pattern implementation.</p>
+        <p>Hi there! I'm Bo Zhong, a full-stack software engineer based in the beautiful San Francisco Bay Area. I love
+            turning ideas into reality by leveraging my expertise in a variety of programming languages, including
+            JavaScript, Ruby on Rails, Swift, and React. When I'm not coding away, I enjoy exploring the latest trends
+            in Firebase Auth, Cocoapods, and Swift Package Manager. I'm also a bit of a whiz with RESTful API calls and
+            delegate design pattern implementation.</p>
         <div style="height: 30px"> </div>
-        <p>Some of the coolest projects I've worked on include Mighty Ninja Run, Quizzler, and Clim8 - a trio of awesome iOS apps that showcase my skills in Swift, MVC design patterns, and principles of object immutability. My other claim to fame is Home-BnB, a full-stack Airbnb clone built using Ruby on Rails and React.js. I'm also super proud of Project Sticky, a MERN-based work management app that's all about helping people track and manage their work with an intuitive UI.</p>
+        <p>Some of the coolest projects I've worked on include Mighty Ninja Run, Quizzler, and Clim8 - a trio of awesome
+            iOS apps that showcase my skills in Swift, MVC design patterns, and principles of object immutability. My
+            other claim to fame is Home-BnB, a full-stack Airbnb clone built using Ruby on Rails and React.js. I'm also
+            super proud of Project Sticky, a MERN-based work management app that's all about helping people track and
+            manage their work with an intuitive UI.</p>
         <div style="height: 30px"> </div>
         <div class="video-container">
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/fIMxLxanwKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/fIMxLxanwKM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </section>
     <section id="projects">
         <h2>My Projects</h2>
-        
+
         <div class="subsection">
             <h3 class="ios-projects-title">iOS Projects</h3>
             <div class="card-container">
                 <div class="card">
-                        <img src="https://i.ibb.co/P99zHS5/Untitled-design-7.png" alt="Project Image">
-                        <h2>Mighty Ninja Run - iOS </h2>
-                        <p>Might Ninja Run is a platform video game for iOS. The player controls our mighty ninja as he automatically run across the screen while timing jumps to collect coins and dodge lethal enemies. The player's end goal is to steer our mighty ninja safely across the level and reach the end of the line. Eight Levels currently available to play.</p>
-                        <div class="button-container">
-                            <a href="https://apps.apple.com/us/app/mighty-ninja-run/id1666743843" target="_blank" class="btn"><span style="color: white">App Store</span></a>
-                            <a href="https://github.com/bob-skywalker/ninja-run-ios" target="_blank" class="btn"><span style="color: white">Github</span></a>                  
-                        </div>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/civicpass-ios.firebasestorage.app/o/civicPass_logo.png?alt=media&token=60f43f63-9265-401a-bdf9-25b5375c90a3"
+                        alt="Project Image">
+                    <h2>Civic Pass - iOS </h2>
+                    <p>Pass your U.S. naturalization interview with confidence! Civic Pass is your complete study
+                        companion for the official 100 USCIS civics questions, featuring interactive practice tests,
+                        realistic mock interviews, and smart flashcards. Practice Test Mode – Answer all 100 official
+                        U.S. citizenship questions with instant feedback and progress tracking
+                    </p>
+                    <div class="button-container">
+                        <a href="https://apps.apple.com/us/app/mighty-ninja-run/id6746682662" target="_blank"
+                            class="btn"><span style="color: white">App Store</span></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://i.ibb.co/P99zHS5/Untitled-design-7.png" alt="Project Image">
+                    <h2>Mighty Ninja Run - iOS </h2>
+                    <p>Might Ninja Run is a platform video game for iOS. The player controls our mighty ninja as he
+                        automatically run across the screen while timing jumps to collect coins and dodge lethal
+                        enemies. The player's end goal is to steer our mighty ninja safely across the level and reach
+                        the end of the line. Eight Levels currently available to play.</p>
+                    <div class="button-container">
+                        <a href="https://apps.apple.com/us/app/mighty-ninja-run/id1666743843" target="_blank"
+                            class="btn"><span style="color: white">App Store</span></a>
+                        <a href="https://github.com/bob-skywalker/ninja-run-ios" target="_blank" class="btn"><span
+                                style="color: white">Github</span></a>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="https://i.ibb.co/jL1mdKd/Screenshot-2024-02-05-at-10-30-44-PM.png" alt="Project Image">
                     <h2>eCommerce - iOS TestFlight</h2>
-                    <p>Fully-functional e-commerce app developed using SwiftUI, Firebase, and KingFisher, offering a seamless shopping experience.</p>
+                    <p>Fully-functional e-commerce app developed using SwiftUI, Firebase, and KingFisher, offering a
+                        seamless shopping experience.</p>
                     <div class="button-container">
-                        <a href="https://testflight.apple.com/join/azYjxaq1" target="_blank" class="btn"><span style="color: white">TestFlight</span></a>
-                        <a href="https://github.com/bob-skywalker/eCommerce-iOS" target="_blank" class="btn"><span style="color: white">Github</span></a>
+                        <a href="https://testflight.apple.com/join/azYjxaq1" target="_blank" class="btn"><span
+                                style="color: white">TestFlight</span></a>
+                        <a href="https://github.com/bob-skywalker/eCommerce-iOS" target="_blank" class="btn"><span
+                                style="color: white">Github</span></a>
                     </div>
                 </div>
                 <div class="card">
-                        <img src="https://i.ibb.co/rttBYjC/Untitled-design-8.png" alt="Project Image">
-                        <h2>Clime8 Weather - iOS</h2>
-                        <p>Made possible with 2 async API fetch simultaneously. Get the live weather forecast with automatic background rendering with this powerful app. See current and forecasted weather with our smart layout that updates as conditions change. View weather conditions, temperatures to see different conditions near you. </p>
-                        <div class="button-container">
-                            <a href="https://apps.apple.com/us/app/clime8/id1662664856" target="_blank" class="btn"><span style="color: white">App Store</span></a>
-                            <a href="https://github.com/bob-skywalker/Clim8-ios" target="_blank" class="btn"><span style="color: white">Github</span></a>
-                        </div>
+                    <img src="https://i.ibb.co/rttBYjC/Untitled-design-8.png" alt="Project Image">
+                    <h2>Clime8 Weather - iOS</h2>
+                    <p>Made possible with 2 async API fetch simultaneously. Get the live weather forecast with automatic
+                        background rendering with this powerful app. See current and forecasted weather with our smart
+                        layout that updates as conditions change. View weather conditions, temperatures to see different
+                        conditions near you. </p>
+                    <div class="button-container">
+                        <a href="https://apps.apple.com/us/app/clime8/id1662664856" target="_blank" class="btn"><span
+                                style="color: white">App Store</span></a>
+                        <a href="https://github.com/bob-skywalker/Clim8-ios" target="_blank" class="btn"><span
+                                style="color: white">Github</span></a>
+                    </div>
                     </a>
                 </div>
                 <div class="card">
-                        <img src="https://i.ibb.co/hsj3rrN/Untitled-design-10.png" alt="Project Image">
-                        <h2>Quizzller - iOS</h2>
-                        <p>Quizzler is the easiest way to study, practice and learn varies topics ranging from demographics to entertainment. Become an expert in whatever you're learning. Come and study and have fun with our flashcard style quiz app. </p>
-                        <div class="button-container">
-                            <a href="https://apps.apple.com/us/app/quizzller/id1661875403" target="_blank" class="btn"><span style="color: white">App Store</span></a>
-                            <a href="https://github.com/bob-skywalker/quizller-ios" target="_blank" class="btn"><span style="color: white">Github</span></a>
-                        </div>
+                    <img src="https://i.ibb.co/hsj3rrN/Untitled-design-10.png" alt="Project Image">
+                    <h2>Quizzller - iOS</h2>
+                    <p>Quizzler is the easiest way to study, practice and learn varies topics ranging from demographics
+                        to entertainment. Become an expert in whatever you're learning. Come and study and have fun with
+                        our flashcard style quiz app. </p>
+                    <div class="button-container">
+                        <a href="https://apps.apple.com/us/app/quizzller/id1661875403" target="_blank" class="btn"><span
+                                style="color: white">App Store</span></a>
+                        <a href="https://github.com/bob-skywalker/quizller-ios" target="_blank" class="btn"><span
+                                style="color: white">Github</span></a>
                     </div>
                 </div>
-        </div>
-        
-        <div class="subsection">
-            <h3 class="fullstack-projects-title">Fullstack Projects</h3>
-            <div class="card-container">
-                <div class="card">
-                        <img src="https://i.ibb.co/xXVysQS/Untitled-design-11.png" alt="Project Image">
-                        <h2>Homebnb - Airbnb Clone</h2>
-                        <p>an online marketplace focused on short-term homestay and experiences. homebnb is a full-stack, multi-functional application clone of Airbnb that uses React and Redux on the front-end and Ruby on Rails, PostgresSQL and AWS S3 on the back-end. User is able to log in and view their reservations and edit their booking dates. Full authentication implementation using ruby on rails library Oauth. Google Map Intergration With X-Y Coordinations. </p>
-                        <div class="button-container">
-                            <a href="https://homebnb-airbnb.herokuapp.com/" target="_blank" class="btn"><span style="color: white">Live Site</span></a>
-                            <a href="https://github.com/bob-skywalker/homebnb2" target="_blank" class="btn"><span style="color: white">Github</span></a>
-                        </div>
-                          
-                </div>
-                <!-- <div class="card">
-                        <img src="https://i.ibb.co/j845H1g/Untitled-design-12.png" alt="Project Image">
-                        <h2>Project Sticky - Task  Managing App</h2>
-                        <p>Project Sticky is an app inspired by the need for project management. By the name project sticky, we hope people can stick to the plan and finish their projects on time. A virtual representation of the progress will make our app more entertaining and practical for people to notice where they are at in the project timeline, as well as if they are on track or behind.</p>
-                        <div class="button-container">
-                            <a href="https://project-sticky.herokuapp.com/" target="_blank" class="btn"><span style="color: white">Live Site</span></a>
-                            <a href="https://github.com/Tians97/Project-Sticky" target="_blank" class="btn"><span style="color: white">Github</span></a>
-                        </div>
-                </div> -->
             </div>
         </div>
-    </section>
-    
-    
+
+
+
     <section id="contact">
-    <h2>Contact Me</h2>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/bo-zhong-bb4a4b13a/" target="_blank" rel="noopener noreferrer">
-            <img src="./src/LinkedIn.svg" alt="LinkedIn" width="48" height="48">
-        </a>
-        <a href="https://github.com/bob-skywalker" target="_blank" rel="noopener noreferrer">
-            <img src="./src/Github.svg" alt="GitHub" width="48" height="48">
-        </a>
-        <a href="mailto:q463250938@gmail.com">
-            <img src="./src/Email.svg" alt="Email" width="48" height="48">
-        </a>
-    </div>
-</section>
-<script>
-    document.getElementById('scroll-down-btn').onclick = function () {
-        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-    };
-</script>
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/bo-zhong-bb4a4b13a/" target="_blank" rel="noopener noreferrer">
+                <img src="./src/LinkedIn.svg" alt="LinkedIn" width="48" height="48">
+            </a>
+            <a href="https://github.com/bob-skywalker" target="_blank" rel="noopener noreferrer">
+                <img src="./src/Github.svg" alt="GitHub" width="48" height="48">
+            </a>
+            <a href="mailto:q463250938@gmail.com">
+                <img src="./src/Email.svg" alt="Email" width="48" height="48">
+            </a>
+        </div>
+    </section>
+    <script>
+        document.getElementById('scroll-down-btn').onclick = function () {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
 </body>
+
 </html>
